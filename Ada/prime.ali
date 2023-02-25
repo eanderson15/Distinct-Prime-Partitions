@@ -1,0 +1,132 @@
+V "GNAT Lib v10"
+M P W=b
+P SS ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_IO
+RV NO_RECURSION
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLICIT_LOOPS
+RV SPARK_05
+
+U prime%b		prime.adb		fda389e0 NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.io_exceptions%s	a-ioexce.ads		a-ioexce.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.img_int%s	s-imgint.adb		s-imgint.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+D ada.ads		20210422172255 76789da1 ada%s
+D a-except.ads		20210422172255 a7106115 ada.exceptions%s
+D a-inteio.ads		20210422172255 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20210422172255 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20210422172255 119b8fb3 ada.streams%s
+D a-tags.ads		20210422172255 491b781d ada.tags%s
+D a-textio.ads		20210422172255 aef4d56d ada.text_io%s
+D a-tiinio.ads		20210422172255 390edddb ada.text_io.integer_io%s
+D a-unccon.ads		20210422172255 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20210422172255 5ab55268 interfaces%s
+D i-cstrea.ads		20210422172255 e53d8b8e interfaces.c_streams%s
+D prime.adb		20210912164213 41bcca4d prime%b
+D system.ads		20210422172255 4635ec04 system%s
+D s-conca2.ads		20210422172255 02a0d7d0 system.concat_2%s
+D s-crtl.ads		20210422172255 0ebbdb71 system.crtl%s
+D s-exctab.ads		20210422172255 54135002 system.exception_table%s
+D s-ficobl.ads		20210422172255 078245e4 system.file_control_block%s
+D s-imgint.ads		20210422172255 02dbe0c2 system.img_int%s
+D s-parame.ads		20210422172255 48ec542b system.parameters%s
+D s-secsta.ads		20210422172255 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20210422172255 a7318a92 system.soft_links%s
+D s-stache.ads		20210422172255 a37c21ec system.stack_checking%s
+D s-stalib.ads		20210422172255 09bd3940 system.standard_library%s
+D s-stoele.ads		20210422172255 2dc34a04 system.storage_elements%s
+D s-traent.ads		20210422172255 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20210422172255 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20210422172255 1b7d22d2 system.wch_con%s
+G a e
+G c Z b b [prime standard 5 11 none]
+X 1 ada.ads
+16K9*Ada 20e8 12|1r6 2r6 3r6 14r17 15r17 21r25 212r73 216r49
+X 3 a-inteio.ads
+18K13*Integer_Text_IO[8|46] 12|2w10 15r21
+X 4 a-ioexce.ads
+18K13*IO_Exceptions 30e22 12|3w10
+X 7 a-textio.ads
+57K13*Text_IO 727e16 12|1w10 14r21 21r29 212r77 216r53
+465U14*Put 12|212s85
+508U14*Put_Line 12|14s29 21s37 216s61
+X 8 a-tiinio.ads
+59U14*Get 12|15s37[3|18]
+X 12 prime.adb
+5U11*Prime 5b11 227l5 227t10
+8i9 N{integer} 15m42 17r21 20r24 26r63 221r71
+10A14 Sieve_Type(boolean)<integer> 61r69 67r49 86r78 88r49 89r52 171r50
+26A38 Partition(integer)<integer> 28r84 107r70 107r101 109r56 123r51 143r52
+. 144r52 169r59 173r59 206r61
+28A38 Partition_Type(26A38)<integer> 104r66 104r102 124r49 140r65 140r88
+. 142r49 167r84 170r64 174r54 201r57 221r37
+31V42 IsPrime{boolean} 31b42 31>51 57l37 57t44 191s49
+31i51 N{integer} 50r45 52r48 55r66
+34V50 PrimeRec{boolean} 34b50 34>60 34>63 45s64 47l45 47t53 55s56
+34i60 N{integer} 38r54 41r57 45r74
+34i63 K{integer} 38r60 41r66 45r77
+61V42 Sieve{10A14} 61b42 61>49 83l37 83t42 88s63
+61i49 N{integer} 64r59 67r66 69r45 75r69
+64i41 lim{integer} 72r52
+65i41 I{integer} 72r48 73r60 74r62 74r66 77r74 80m49 80r54
+66i41 J{integer} 74m57 75r64 76r72 77m65 77r70
+67a41 Bools{10A14} 70m49 73r53 76m65 82r48
+86V42 SievePrimes{10A14} 86b42 86>55 86>58 101l37 101t48 171s64
+86i55 N{integer} 88r70 89r69
+86i58 K{integer} 93r57
+88a41 Bools{10A14} 97r73
+89a41 RetBools{10A14} 91r50 94m57 97m57 100r48
+91i45 I{integer} 93r53 94r67 97r67 97r80
+104V42 AddElemToAllLists{28A38} 104b42 104>61 104>82 137l37 137t54 193s82
+. 196s69
+104a61 LL{28A38} 123r64 124r65 129r56 132r58 133r87
+104i82 I{integer} 133r96
+107V50 AddElemToFront{26A38} 107b50 107>66 107>81 121l45 121t59 133s70
+107a66 L{26A38} 111r58 117r77
+107i81 I{integer} 114r77
+109a49 RetL{26A38} 114m65 117m65 120r56
+111i53 J{integer} 113r61 114r71 117r71 117r79
+123a41 LLFirst{26A38} 128r45
+124a41 RetLL{28A38} 133m57 136r48
+132i53 J{integer} 133r64 133r91
+140V42 ConcatList{28A38} 140b42 140>54 140>59 164l37 164t47 193s56 193s69
+. 196s56
+140a54 LL1{28A38} 142r71 143r65 148r56 152r56 155r58 156r70 160r68
+140a59 LL2{28A38} 142r84 144r65 150r56 159r58 160r83
+142a41 RetLL{28A38} 156m57 160m57 163r48
+143a41 LL1First{26A38} 147r46 149r48
+144a41 LL2First{26A38} 147r70 151r48
+155i53 I{integer} 156r64 156r75
+159i53 I{integer} 160r64 160r87
+167V42 PrimePartition{28A38} 167b42 167>58 167>61 167>64 193s102 193s162
+. 196s89 196s149 198l37 198t51 221s55
+167i58 N{integer} 171r77 173r78 188r46 188r58 191r58 193r119 193r178 196r106
+. 196r165
+167i61 K{integer} 171r80 188r62
+167i64 J{integer} 191r67 193r196 196r183
+169a41 Empty_Partition{26A38} 170r97
+170a41 Empty_Partition_Type{28A38} 185r56 189r56
+171a41 Primes{10A14} 177r50 178r53
+172i41 IPrime{integer} 179m57 184r45 193r123 193r133 193r151 193r182 196r110
+. 196r120 196r138 196r169
+173a41 NPrimePartition{26A38} 174r87
+174a41 NPrimeList{28A38} 193r208
+177i45 I{integer} 178r61 179r67
+201U43 PrintLL 201b43 201>52 218l37 218t44 223s33
+201a52 LL{28A38} 204r50 206r75
+204i45 I{integer} 206r79
+206a57 L{26A38} 208r66 209r70 212r104
+208i61 J{integer} 209r73 212r107
+221a33 F{28A38} 223r42
+
