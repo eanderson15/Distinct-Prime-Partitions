@@ -1,8 +1,4 @@
-Eric Anderson
-eander29@u.rochester.edu
-CSC 254
-Assignment #1
-
+# Distinct Prime Partitions
 
 BASIC RUN INSTRUCTIONS:
 Ada: gnatmake prime.adb -> ./prime
@@ -10,47 +6,6 @@ C#: mcs prime.cs -> mono prime.exe
 OCaml: ocaml prime.ml
 Prolog: swipl prime.pl
 Python: python3 prime.py
-
-
-INTRODUCTION TO MY THOUGHT PROCESS:
-I have coded in Python before but it's been 3 years so for this assignment I
-basically didn't know any of the languages. Naively, I figured that I would
-try to implement the program in a language I've worked with a lot recently -
-C. Oh how naive I was. Anyway, this led me astray as I then went down the 
-path of trying to implement completely recursively, but without the use of 
-lists or arrays. With no luck there, I developed a pseudocode that would work
-using arrays and three for loops. Then, I figured out how iterators worked 
-and implemented a beautiful looking thing in Python. C# was straight forward
-translation from that. Tried Prolog and couldn't figure it out at the time.
-Jumped to OCaml, where upon looking at a functional language, the natural
-recursion of the program clicked and I figured it out in a snap. Then, Ada
-I implemented in the same way because I was too lazy to figure out it's 
-potential solution with iterators. Terribly implemented because arrays are
-not so flexible in Ada. Finally, I worked some more on Prolog and with some
-slight alterations I got it working with backtracking in the same way that
-it worked in Python with iterators.
-
-
-IMPLEMENTATION COMPARISONS:
-Python was easy. It gave me nice error messages and was straight forward to implement with iterators. I was somewhat familiar with Python but definitely
-rusty so it took me a while.
-
-C# was even easier. It was pretty much line for line translation from Python in terms of implementation. Syntax was very similar to C++ and Java, both of
-which I'm familiar with so this was quick.
-
-OCaml had such a straightforward fully functional implementation that if I already knew the language it would've been super quick. Unfortunately, it took
-me a while because I didn't know it. Going through an OCaml tutorial, the solution just came to me because OCaml was built to solve this with recursion and
-lists.
-
-Ada was a clusterdump. I did not want to figure out how to implement it with iterators because I believe I would've gotten bogged down in figuring out the 
-nitty gritty stuff in Ada. Instead, I settled on implementing it in the style of OCaml with recursion and lists. Now, anyone who is anyone would know Ada is
-a little inflexible with its arrays so it quickly escalated. But I knew that the algorithm would work and it was just a matter of writing the right methods.
-So, in the end I have a quite straightforward implementation that became quite unappealing and unintuitive in Ada.
-
-Prolog was interesting. I think my final implementation is quite elegant with some minor tweaks and modifications that could be made to make it even nicer.
-Its implemented in the style of Python's pseudocode using iterators through backtracking.
-
-Essentially, in the end, I have two different pseudocodes that got transformed vastly with each different language, except for between Python and C#.
 
 
 PROGRAM BREAKDOWNS:
